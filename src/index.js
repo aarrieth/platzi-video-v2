@@ -23,8 +23,8 @@ window.addEventListener('load', async function loadData() {
             <img src="${medium_cover_image}" alt="" class="carousel-items__img">
             <div class="carousel-items__details">
                 <div>
-                    <img src="../img/play.png" alt="Play vídeo">
-                    <img src="../img/plus.png" alt="Agregar vídeo">
+                    <img src="./src/img/play.png" alt="Play vídeo">
+                    <img src="./src/img/plus.png" alt="Agregar vídeo">
                 </div>
                 <p class="carousel-items__details--title items__details--margin">${title}</p>
                 <p class="carousel-items__details--subtitle items__details--margin">${year}</p>
