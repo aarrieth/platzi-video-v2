@@ -131,12 +131,39 @@ ul:hover {
 
 .carousel {
     width: 100%;
-    /*overflow: scroll; */
+    overflow: auto;
     padding: 30px;
     position: relative;
     box-sizing: border-box;
     /*para que los elementos hijos se posicionen en relación a su padre*/
-    scrollbar-width: none;
+    display: flex;
+}
+
+.carousel::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.carousel::-webkit-scrollbar-button:increment,
+.carousel::-webkit-scrollbar-button {
+    display: none;
+}
+
+.carousel::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.carousel::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.carousel .primaryPlaylistItem {
+    margin-right: 10px;
 }
 
 .carousel__container {
@@ -170,6 +197,7 @@ ul:hover {
 .carousel__container:hover .carousel-items:hover {
     transform: scale(1.5);
     opacity: 1;
+    margin-right: 110px;
 }
 
 .carousel-items__img {
@@ -212,3 +240,41 @@ ul:hover {
 ::-webkit-scrollbar {
     display: none;
 } */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.footer a:last-child {
+    margin-right: 0px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px) {
+    .text-style--size {
+        text-align: center;
+        margin: 0px;
+    }
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .footer a {
+        margin-bottom: 5px;
+    }
+}
