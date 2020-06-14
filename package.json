@@ -1,0 +1,16 @@
+{
+  "name": "app-platzi",
+  "version": "1.0.0",
+  "description": "Creación de la plataforma platzi vídeo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "html"
+  ],
+  "author": "aarrieth",
+  "license": "MIT"
+}
